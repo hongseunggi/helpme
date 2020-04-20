@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_menu1"
+        android:icon="@drawable/baseline_home_white_36dp"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/navigation_menu2"
+        android:icon="@drawable/baseline_photo_camera_white_36dp"
+        android:title="Detect" />
+
+    <item
+        android:id="@+id/navigation_menu3"
+        android:icon="@drawable/baseline_person_white_36dp"
+        android:title="USER" />
+
+    <item
+        android:id="@+id/navigation_menu4"
+        android:icon="@drawable/baseline_question_answer_white_36dp"
+        android:title="COMMUNITY" />
+
+</menu>

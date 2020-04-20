@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#fffdf5e6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundshape">
+
+        <TextView
+
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="36dp"
+            android:text="이름 : "
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/item_uinfo_name"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="36dp"
+
+
+            android:layout_toRightOf="@id/uname"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Name" />
+
+
+        <TextView
+
+            android:id="@+id/uheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uname"
+            android:layout_marginStart="4dp"
+            android:text="키 : "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/item_uinfo_height"
+            android:layout_width="454dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_uinfo_name"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@id/uheight"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Height" />
+
+        <TextView
+            android:id="@+id/uweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uheight"
+            android:layout_marginStart="4dp"
+            android:text="몸무게 : "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/item_uinfo_weight"
+            android:layout_width="454dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_uinfo_height"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@id/uweight"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Weight" />
+
+
+        <TextView
+            android:id="@+id/ubirthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uweight"
+            android:layout_marginStart="4dp"
+            android:text="생년월일 : "
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/item_uinfo_birthdate"
+            android:layout_width="454dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_uinfo_weight"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@+id/ubirthdate"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="Birthdate" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

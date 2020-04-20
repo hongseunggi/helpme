@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf5e6"
+    tools:context="com.example.help.comminity.PostActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="정보 입력"
+        android:textAlignment="center"
+        android:textColor="#ff808000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <EditText
+        android:id="@+id/uinfo_name_edit"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_height_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <EditText
+        android:id="@+id/uinfo_height_edit"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:hint="Height"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_weight_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uinfo_name_edit"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/uinfo_weight_edit"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:hint="Weight"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_birthdate_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/uinfo_birthdate_edit"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:hint="Birthdate"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/Man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="MAN"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_save_button"
+        app:layout_constraintEnd_toEndOf="@+id/uinfo_birthdate_edit"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/Woman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:text="WOMAN"
+        app:layout_constraintBottom_toTopOf="@+id/uinfo_save_button"
+        app:layout_constraintEnd_toEndOf="@+id/uinfo_save_button"
+        app:layout_constraintRight_toLeftOf="@+id/Man"></CheckBox>
+
+    <Button
+        android:id="@+id/uinfo_save_button"
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundshape"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

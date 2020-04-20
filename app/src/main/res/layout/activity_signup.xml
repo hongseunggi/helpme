@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#fffdf5e6"
+    tools:context=".Log_inandout.SignupActivity">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/helpme"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sign_email"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bg_gis_result_items_count"
+        android:hint="E_mail"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sign_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:background="@drawable/bg_gis_result_items_count"
+        android:id="@+id/sign_password"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:hint="Password"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sign_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_email" />
+
+    <Button
+        android:id="@+id/sign_success"
+        android:layout_width="177dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
